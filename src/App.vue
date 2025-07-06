@@ -47,8 +47,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Helvetica Neue', sans-serif;
-  background-color: #e5e7eb; /* 연회색 배경 */
-  color: #111827;
+  background-color: #2c2f33; /* 진한 회색 */
+  color: #9ac7f8; /* 옅은 파란색 (본문용) */
 }
 
 .container {
@@ -60,7 +60,7 @@ body {
 .title {
   text-align: center;
   font-size: 2.5rem;
-  color: #111827;
+  color: #3b82f6; /* 선명한 파란색 */
   margin-bottom: 40px;
 }
 
@@ -71,33 +71,34 @@ body {
 }
 
 .card {
-  background-color: #ffffff;
-  border: 1px solid #ccc;
+  background-color: #1e2124; /* 카드 안쪽: 더 어두운 회색 */
+  border: 1px solid #3b82f6;
   border-radius: 12px;
   padding: 20px;
-  transition: box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
 }
 
 .card-title {
   font-size: 1.2rem;
-  color: #3b82f6; /* 은은한 파란색 */
+  color: #3b82f6; /* 선명한 파란색 */
   margin-bottom: 10px;
   font-weight: bold;
 }
 
 .card-desc {
   font-size: 0.95rem;
-  color: #333;
+  color: #9ac7f8; /* 옅은 파란색 */
 }
 
 .footer {
   text-align: center;
   font-size: 0.85rem;
-  color: #555;
+  color: #9ac7f8;
   margin-top: 60px;
 }
 </style>
